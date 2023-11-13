@@ -7,10 +7,23 @@ console.log("The file main_js.js was succesfully included");
 $(document).ready(function() {
     alert('1. DOM Loaded and ready');   //Always before window.load
 
-    //First portion the selector 
-    // $('#mybutton').click(function() {
-    //     alert("1. Now the dom is ready to be manipulated");
-    // })
+    if ($('#mybuttonq').length > 0){      //The element mybutton was found (or is present)
+        console.log('The element mybutton was found');
+
+        //First portion the selector, this case the id selector
+        $('#mybutton').click(function() {        
+            //document.getElementById('mybutton').style.backgroundColor = 'lightgreen';     //javascript way
+            $('#mybutton').css('background-color', 'yellow');                       //jquery way
+        
+    })
+    }
+    else {
+        console.log('The element mybutton was NOT found');
+    }
+
+
+
+    
 });
 
 //Depracted
