@@ -28,7 +28,14 @@ $(document).ready(function() {
 
     //Alert total count of td elements on the page
     alert($('td').length);
-    
+
+    //Class selector
+    $('.list-fruit').css('border', '3px solid red');
+
+    //Attribute selector
+    //$('[title]'); //Select all element that have title attribute
+    $('p[title]').css('border', '2px dotted green');            //Select a paragraph that have a title attribute
+    $('p[title="Sports"]').css('background-color', 'orange');  //Select a paragraph that have a title attribute with value Sports
 });
 
 //Depracted
