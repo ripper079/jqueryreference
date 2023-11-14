@@ -22,7 +22,12 @@ $(document).ready(function() {
     }
 
 
+    //The element selector
+    $('td');                //Selects all td elements
+    $('div a').css('background-color', 'pink');              //Select all anchor elements that are descendants of div element
 
+    //Alert total count of td elements on the page
+    alert($('td').length);
     
 });
 
